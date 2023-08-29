@@ -21,7 +21,7 @@ export default function TutorInfo() {
           <div className="opacity-[0.5] mx-4  ">4.5</div>
         </div>
         <div className="mt-5">
-          <Link to="demorequest">
+          <Link to="Profile/demorequest">
             <button className=" rounded-11xl box-border w-[126px] h-8 cursor-pointer border-[1px] border-solid border-primary-color mb-2 bg-white text-blue-800">
               Request a demo
             </button>

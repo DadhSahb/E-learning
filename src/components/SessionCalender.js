@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function SessionCalender() {
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const times = Array.from({ length: 11 }, (_, i) => i + 1);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   const availabilityStatus = [
     [true, true, false, true, false, true, true, false, true, false, true],
     [
@@ -159,21 +167,38 @@ export default function SessionCalender() {
                         ? "text-blue-500 cursor-pointer hover:bg-gray-100 relative"
                         : ""
                     }`}
+                    onMouseEnter={openModal}
+                    onMouseLeave={closeModal}
                   >
                     {statusRow[index] ? (
                       <>
                         Available
-                        <div className="hidden absolute top-0 left-0 right-0 bottom-0 transition-all duration-300 opacity-0 group-hover:opacity-100">
-                          <div className="box">
-                            <div className="rectangle"></div>
-                            <div className="absolute top-2 left-2 text-white">
-                              <p className="text-sm">Available Slot</p>
-                              <button className="mt-2 bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">
+                        {isModalOpen && (
+                          <div className="fixed inset-0 flex items-start justify-center z-50">
+                            <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
+                            <div className="absolute bg-#5538c8 h-128 w-177 p-4 rounded-lg shadow-lg z-10">
+                              <h2 className="text-xl font-semibold text-white mb-2">
                                 Book Session
-                              </button>
+                              </h2>
+                              <p className="text-gray-300 mb-4">
+                                Are you sure you want to book this session?
+                              </p>
+                              <div className="flex justify-end">
+                                <button
+                                  className="px-3 py-2 rounded bg-gray-200 hover:bg-gray-300 mr-2"
+                                  onClick={closeModal}
+                                >
+                                  Cancel
+                                </button>
+                                <Link to="demorequest">
+                                  <button className="px-3 py-2 rounded bg-blue-500 text-white hover:bg-blue-600">
+                                    Confirm
+                                  </button>
+                                </Link>
+                              </div>
                             </div>
                           </div>
-                        </div>
+                        )}
                       </>
                     ) : (
                       " "

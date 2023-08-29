@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TutorInfo from "./TutorInfo";
 import {
   UserGroupIcon,
@@ -8,7 +8,20 @@ import {
   ClockIcon,
   GlobeIcon,
 } from "@heroicons/react/solid";
+import { getInstructorDetails } from "../utils/api";
 export default function SidebarProfile() {
+  const [instructorDetails, setInstructorDetails] = useState({});
+  
+  //API Iegration
+  useEffect(() => {
+    const instructorId = "64ae582c5ae85525e4dc4372"; 
+    getInstructorDetails(instructorId)
+      .then(data => {
+        if (data) {
+          setInstructorDetails(data);
+        }
+      });
+  }, []);
   return (
     <div className="flex">
       <div className="w-[320px] bg-whitesmoke p-4 md:p-8 relative h-screen">
@@ -19,7 +32,7 @@ export default function SidebarProfile() {
               alt=""
               src="/ellipse-13@2x.png"
             />
-            <h2 className="text-3xl leading-[170%] font-semibold mb-2">Name</h2>
+            <h2 className="text-3xl leading-[170%] font-semibold mb-2">{instructorDetails.firstName} {instructorDetails.lastName}</h2>
             <p className="">BS Mathematics</p>
             <p className="font-semibold">USD $7/hour</p>
             <div className="flex flex-row mb-2">
