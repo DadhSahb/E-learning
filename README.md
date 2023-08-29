@@ -1,5 +1,5 @@
-Run Following commands after cloning:
-1: npm i (if it not work then try npm i --legacy-peer-deps
+Run the following commands after cloning:
+1: npm i (if it not work, then try npm i --legacy-peer-deps)
 2: npm run start
 
 Screenshots:
