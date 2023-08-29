@@ -1,123 +1,89 @@
-import { useCallback } from "react";
 
-const Profile = () => {
-    const onAvailableText3Click = useCallback(() => {
-        // Please sync "session booking hover" to the project
-    }, []);
-
-    const onMonTextClick = useCallback(() => {
-        // Please sync "session booking hover" to the project
-    }, []);
-
+export default function DemoRequesttFeilds() {
     return (
-        <div className="relative bg-whitesmoke-100 w-full h-[1936px] overflow-hidden text-left text-base text-primary-color font-sora">
-            <div className="absolute top-[96px] left-[calc(50%_-_720px)] bg-grayscale-white w-[382px] h-[310px]" />
-            <div className="absolute top-[343px] left-[139px] text-xs leading-[170%] text-gray-color">
-                <span>skill level:</span>
-                <span className="text-black"> Medium</span>
-            </div>
-            <div className="absolute top-[279px] left-[148px] text-sm leading-[170%] font-semibold text-black">
-                USD $7/ hour
-            </div>
-            <img
-                className="absolute top-[315px] left-[145px] w-[72px] h-3"
-                alt=""
-                src="/group-1.svg"
-            />
-            <div className="absolute top-[313px] left-[223px] text-xs text-black opacity-[0.5]">
+      <>
+        <div className="demo-requestt-feilds">
+          <div className="div">
+            <div className="overlap-group">
+              <div className="text-wrapper text-primary text-2xl font-semibold mt-2">
+                Create a Demo Request:
+              </div>
+              <div className="text-wrapper text-primary text-lg font-semibold mt-8">
+                Other details:
+              </div>
+              <div className="text-wrapper text-primary text-lg font-semibold">
+                Tutor Info
+              </div>
+              <div className="info text-primary text-base font-semibold">
+                Info
+              </div>
+              <div className="rectanglar bg-white rounded-lg shadow-md h-132 left-187 top-146" />
+              <img
+                className="img h-120 w-120 absolute left-193 top-152"
+                alt="Rectangle"
+                src="rectangle-932.png"
+              />
+              <div className="text-wrapperr text-black text-base font-normal left-329 opacity-80 line-height-normal top-197">
+                Expertise: BCS
+              </div>
+              {/* ... Other content */}
+              <p className="start-time absolute left-187 top-502 text-transparent text-base font-normal">
+                <span className="span text-black">Start Time</span>
+                <span className="text-wrapper-15 text-red-600">*</span>
+              </p>
+              <p className="choose-session-date absolute left-752 top-502 text-transparent text-base font-normal">
+                <span className="span text-black">Choose Session Date</span>
+                <span className="text-wrapper-15 text-red-600">*</span>
+              </p>
+              <p className="grade absolute left-752 top-385 text-transparent text-base font-normal">
+                <span className="span text-black">Grade / Class</span>
+                <span className="text-wrapper-15 text-red-600">*</span>
+              </p>
+              <p className="grade absolute left-187 top-385 text-transparent text-base font-normal">
+                <span className="span text-black">Enter Subject</span>
+                <span className="text-wrapper-15 text-red-600">*</span>
+              </p>
+              <div className="group bg-white border border-gray-300 h-50 left-187 absolute top-532 w-500" />
+              <div className="group bg-white border border-gray-300 h-50 left-752 absolute top-532 w-500" />
+              <div className="group bg-white border border-gray-300 h-50 left-752 absolute top-415 w-500" />
+              <div className="group bg-white border border-gray-300 h-50 left-187 absolute top-415 w-500" />
+              <div className="text-wrapper-16 text-black text-base font-normal opacity-50 left-211 absolute top-546">
+                02:00 AM
+              </div>
+              <div className="text-wrapper-17 text-black text-base font-normal left-776 absolute top-546">
+                10/07/2023
+              </div>
+              <div className="text-wrapper-18 text-gray-600 text-base font-normal left-776 absolute top-429">
+                Select
+              </div>
+              <div className="text-wrapper-19 text-gray-600 text-base font-normal left-211 absolute top-429">
+                Subject Name
+              </div>
+              <img
+                className="line h-101 left-720 absolute top-161 w-1"
+                alt="Line"
+                src="line-4.svg"
+              />
+              <img
+                className="group-5 h-12 left-572 absolute top-200 w-72"
+                alt="Group"
+                src="group-34.png"
+              />
+              <div className="text-wrapper-20 text-black text-base font-normal opacity-50 left-650 absolute top-197">
                 4.5
+              </div>
+              <div className="rectangle-4 bg-purple-700 rounded-md h-50 left-700 absolute top-691 w-252" />
+              <div className="rectangle-5 border border-primary rounded-md h-50 left-550 absolute top-691 w-123" />
+              <div className="text-wrapper-21 text-white text-base font-normal left-737 absolute top-703">
+                Confirm Booking
+              </div>
+              <div className="text-wrapper-22 text-primary text-base font-normal left-586 absolute top-702">
+                Back
+              </div>
             </div>
-            <div className="absolute top-[412px] left-[calc(50%_-_720px)] bg-grayscale-white w-[382px] h-[1524px]" />
-            <div className="absolute top-[96px] left-[calc(50%_-_332px)] bg-grayscale-white w-[1052px] h-[1439px]" />
-            <div className="absolute top-[1934px] left-[calc(50%_-_332px)] bg-grayscale-white w-[1054px] h-[393px]" />
-            <div className="absolute top-[1579px] left-[412px] bg-ghostwhite w-[980px] h-[58px]" />
-            <div className="absolute top-[1643px] left-[412px] bg-ghostwhite w-[980px] h-[58px]" />
-            <div className="absolute top-[1707px] left-[412px] bg-ghostwhite w-[980px] h-[58px]" />
-            <div className="absolute top-[1601px] left-[424px] text-xl leading-[150%] font-medium text-black">
-                Experience
-            </div>
-            <div className="absolute top-[1665px] left-[422px] text-xl leading-[150%] font-medium text-black">
-                Education
-            </div>
-            <div className="absolute top-[1729px] left-[422px] text-xl leading-[150%] font-medium text-black">
-                Certificates
-            </div>
-            <div className="absolute top-[96px] left-[calc(50%_-_720px)] bg-grayscale-white w-[1440px] h-[928px] hidden" />
-            <div className="absolute top-[0px] left-[0px] bg-grayscale-white w-[1440px] h-[90px]" />
-            <div className="absolute top-[18px] left-[50px] text-[31.93px] leading-[170%] font-extrabold">
-                DEMO
-            </div>
-            <div className="absolute top-[23px] left-[1184px] rounded bg-primary-color flex flex-row py-2.5 px-[26px] items-start justify-start text-grayscale-white">
-                <div className="relative leading-[150%]">Upgrade</div>
-            </div>
-            
-            <div className="absolute top-[143px] left-[1336px] rounded-tl-none rounded-tr rounded-br rounded-bl-none bg-whitesmoke-200 box-border w-[54px] h-[39px] border-[1px] border-solid border-outline" />
-            <img
-                className="absolute top-[153px] left-[1353px] w-5 h-5"
-                alt=""
-                src="/vuesaxoutlinearrowright.svg"
-            />
-            <img
-                className="absolute top-[1598px] left-[1350px] w-5 h-5"
-                alt=""
-                src="/vuesaxoutlinearrowright1.svg"
-            />
-            <img
-                className="absolute top-[1662px] left-[1350px] w-5 h-5"
-                alt=""
-                src="/vuesaxoutlinearrowright2.svg"
-            />
-            <img
-                className="absolute top-[1726px] left-[1350px] w-5 h-5"
-                alt=""
-                src="/vuesaxoutlinearrowright3.svg"
-            />
-            <img
-                className="absolute top-[153px] left-[1299px] w-5 h-5"
-                alt=""
-                src="/vuesaxoutlinearrowleft.svg"
-            />
-            <div className="absolute top-[192.5px] left-[542.5px] box-border w-px h-[1295px] border-r-[1px] border-solid border-outline" />
-            <div className="absolute top-[298.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[342.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[386.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[430.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[474.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[518.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[562.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[606.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[650.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[694.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[738.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[782.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[826.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[870.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[914.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[958.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[1002.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[1046.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[1090.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[1134.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[1178.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[1222.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[1266.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[1310.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[1354.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[1398.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[1442.5px] left-[421.5px] box-border w-[969px] h-px border-t-[1px] border-solid border-outline" />
-            <div className="absolute top-[192.5px] left-[663.5px] box-border w-px h-[1295px] border-r-[1px] border-solid border-outline" />
-            <div className="absolute top-[192.5px] left-[784.5px] box-border w-px h-[1295px] border-r-[1px] border-solid border-outline" />
-            <div className="absolute top-[192.5px] left-[905.5px] box-border w-px h-[1295px] border-r-[1px] border-solid border-outline" />
-            <div className="absolute top-[192.5px] left-[1026.5px] box-border w-px h-[1295px] border-r-[1px] border-solid border-outline" />
-            <div className="absolute top-[192.5px] left-[1147.5px] box-border w-px h-[1295px] border-r-[1px] border-solid border-outline" />
-            <div className="absolute top-[192.5px] left-[1268.5px] box-border w-px h-[1295px] border-r-[1px] border-solid border-outline" />
-            <img
-                className="absolute top-[664px] left-[48px] w-5 h-5"
-                alt=""
-                src="/vuesaxoutlinetimer.svg"
-            />
+          </div>
         </div>
+      </>
     );
-};
-
-export default Profile;
+  }
+  
